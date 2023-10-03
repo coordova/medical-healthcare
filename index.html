@@ -15,6 +15,114 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
+    <!--header-->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+        <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+            <!--Logo-->
+            <div class="flex justify-center lg:justify-normal">
+                <a href="#">
+                    <img src="./assets/img/header/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+                <!--location-->
+                <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                    <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+                    <div class="text-secondary">123 Airling, Miola, NY</div>
+                </div>
+                <!--phone-->
+                <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                    <i class="ri-phone-fill"></i>
+                    <div class="text-secondary">(+487) 384 9452</div>
+                </div>
+                <!--btn-->
+                <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">Book now</button>
+                <!--mobile nav trigger btn-->
+                <nav class="mnav bg-white fixed w-[300px] h-screen top-0 -left-[300px] shadow-2xl lg:hidden transition-all duration-200 z-20">
+                    <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+                        <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                    </div>
+                    <!--logo, list, form-->
+                    <div class="px-12 flex flex-col gap-y-12 h-full">
+                        <!--logo-->
+                        <a href="#">
+                            <img src="assets/img/header/logo.svg" alt="logo">
+                        </a>
+                        <!--list-->
+                        <ul class="flex flex-col gap-y-5">
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Home</a></li>
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Doctors</a></li>
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Department</a></li>
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Services</a></li>
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a></li>
+
+                        </ul>
+                        <!--form-->
+                        <form action="#" class="relative flex gap-x-[10px]">
+                            <label for="mnav-search-input">
+                                <i class="ri-search-line text-2xl text-accent"></i>
+                            </label>
+                            <input type="text" id="mnav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+                        </form>
+                    </div>
+                </nav>
+                <!--desktop nav-->
+                <nav class="bg-white absolute w-full left-0 top-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                    <ul class="flex gap-x-4">
+                        <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a></li>
+                        <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Doctors</a></li>
+                        <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Department</a></li>
+                        <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Services</a></li>
+                        <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a></li>
+
+                    </ul>
+                    <!--form-->
+                    <form action="#">
+                        <label for="search-input">
+                            <i class="ri-search-line text-2xl text-accent"></i>
+                            <input type="text" id="search-input" placeholder="Search..." class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150">
+                        </label>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--hero-->
+    <section id="hero" class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+        <!--container-->
+        <div class="container mx-auto h-full">
+            <!--text & image-->
+            <div class="flex flex-col items-center justify-between h-full xl:flex-row">
+                <!--text-->
+                <div class="hero__text text-center xl:w-[48%] xl:text-left">
+                    <!--badge icon-->
+                    <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+                        <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+                        <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">Live your life
+                        </div>
+                    </div>
+                    <!--title-->
+                    <h1 class="h1 mb-6">We care about your healt</h1>
+                    <!--description-->
+                    <p class="mb-[42px] md:max-w-xl">
+                        Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.
+                    </p>
+                    <!--btn-->
+                    <button class="btn btn-lg btn-accent mx-auto xl:mx-0">Contact us</button>
+                </div>
+                <!--image-->
+                <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                    <img src="assets/img/hero/img.png" alt="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--hero end-->
+
     
 
     <!--SCRIPTS-->
