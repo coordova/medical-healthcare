@@ -669,6 +669,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .flex {
   display: flex;
 }
@@ -719,6 +723,10 @@ video {
 
 .min-h-\[400px\] {
   min-height: 400px;
+}
+
+.min-h-\[588px\] {
+  min-height: 588px;
 }
 
 .w-8 {
@@ -780,6 +788,10 @@ video {
 
 .max-w-\[98\%\] {
   max-width: 98%;
+}
+
+.max-w-\[555px\] {
+  max-width: 555px;
 }
 
 .flex-1 {
@@ -875,6 +887,10 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -925,6 +941,11 @@ video {
   border-right-width: 1px;
 }
 
+.border-\[\#dcdcdc\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 220 220 / var(--tw-border-opacity));
+}
+
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(232 240 241 / var(--tw-bg-opacity));
@@ -952,12 +973,20 @@ video {
   background-image: url(../../assets/img/testimonials/bg.svg);
 }
 
+.bg-departments {
+  background-image: url(../../assets/img/departments/bg.svg);
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-right {
   background-position: right;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1572,6 +1601,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 48%;
   }
 
+  .xl\:w-\[310px\] {
+    width: 310px;
+  }
+
+  .xl\:w-\[640px\] {
+    width: 640px;
+  }
+
   .xl\:max-w-\[710px\] {
     max-width: 710px;
   }
@@ -1592,6 +1629,14 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
   }
 
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+
   .xl\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1602,6 +1647,14 @@ h1, h2, h3, h4, h5, h6 {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .xl\:border-r {
+    border-right-width: 1px;
+  }
+
+  .xl\:bg-auto {
+    background-size: auto;
   }
 
   .xl\:px-0 {
@@ -1626,11 +1679,31 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 70px;
   }
 
+  .xl\:pb-\[90px\] {
+    padding-bottom: 90px;
+  }
+
+  .xl\:pt-\[80px\] {
+    padding-top: 80px;
+  }
+
+  .xl\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:pt-3 {
+    padding-top: 0.75rem;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
 
   .xl\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .xl\:text-\[17px\] {
+    font-size: 17px;
   }
 }
