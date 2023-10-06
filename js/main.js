@@ -55,3 +55,4 @@ faqItems.forEach((item) => {
         iconElement.classList = `${iconClass} text-2xl  transition-all duration-300`;
     })
 })
+
